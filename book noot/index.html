@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navebar">
+        <h1>KeyBook</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum cupiditate tempora fuga doloremque dolore. Sequi eius reiciendis deleniti voluptatibus?</p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+
+    </div>
+
+    <div class="popup-overlay">
+        <div class="popup-box">
+            <h2>Key Book</h2>
+            <form>
+                <input type="text" placeholder="Book Name" id="book-name" >
+                <input type="text" placeholder="Author Name" id="author-name">
+                <textarea placeholder="Discription" id="discription"></textarea>
+                <button id="add-book">Add Book</button>
+                <button id="cancle-popup">Cancle</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <button class="add-button" id="add-popup-but">+</button>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
